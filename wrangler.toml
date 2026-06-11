@@ -8,7 +8,7 @@ assets = { directory = "./public" }
 [[d1_databases]]
 binding = "DB"
 database_name = "caprica-media-db"
-database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+database_id = "588d9df7-1f9f-4556-8eb4-32e76a1134d5"
 
 [vars]
 SITE_NAME = "Caprica Media Group"
