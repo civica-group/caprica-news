@@ -1,0 +1,14 @@
+name = "caprica-media-group"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+assets = { directory = "./public" }
+
+[[d1_databases]]
+binding = "DB"
+database_name = "caprica-media-db"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+
+[vars]
+SITE_NAME = "Caprica Media Group"
