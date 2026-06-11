@@ -1,1 +1,73 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Caprica Media Group</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/style.css"></head><body><main><section class="hero wrap"><div class="kicker">Powered by Civica</div><h1>Caprica Media Group</h1><p>A Caprican media and communications company headquartered in Costa Blanca, operating eighteen national, international, and local news organisations across digital, print, broadcast, and multimedia platforms.</p></section><section class="section wrap"><h2>Latest across the network</h2><div id="latest" class="posts"></div></section><section class="section wrap"><h2>Network brands</h2><div id="brandgrid" class="brandgrid"></div></section><section class="section wrap grid"><div class="card"><h3>National News</h3><p>Civic affairs, state institutions, elections, security, policy, and national reporting.</p></div><div class="card"><h3>International News</h3><p>Foreign coverage, diplomacy, global markets, international conflict, and regional analysis.</p></div><div class="card"><h3>Local News</h3><p>City, regional, community, and local government coverage from across Caprica.</p></div></section></main><div id="foot"></div><script src="/app.js"></script><script>renderHome()</script></body></html>
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Caprica Media Group</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main>
+    <section class="masthead wrap">
+      <div class="datebar">
+        <span id="todayline">Caprica edition</span>
+        <span>Powered by Civica</span>
+      </div>
+      <h1>Caprica Media Group</h1>
+      <p>Eighteen publications. One national network.</p>
+    </section>
+
+    <section class="wrap news-layout">
+      <div class="lead-column">
+        <div id="leadStory" class="lead-story"></div>
+      </div>
+      <aside class="briefs-panel">
+        <div class="panel-head">Network Briefing</div>
+        <div id="briefs"></div>
+      </aside>
+    </section>
+
+    <section class="wrap section branch-section">
+      <div class="section-title-row">
+        <h2>Across the network</h2>
+        <a href="/brands.html">View all brands</a>
+      </div>
+      <div class="branch-grid">
+        <div class="branch-card">
+          <span>National News Media Branch</span>
+          <div id="nationalBrands" class="mini-brand-grid"></div>
+        </div>
+        <div class="branch-card">
+          <span>International News Media Branch</span>
+          <div id="internationalBrands" class="mini-brand-grid"></div>
+        </div>
+        <div class="branch-card">
+          <span>Local News Media Branch</span>
+          <div id="localBrands" class="mini-brand-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap section">
+      <div class="section-title-row">
+        <h2>Latest stories</h2>
+        <span class="muted">Published across CMG publications</span>
+      </div>
+      <div id="latest" class="story-grid"></div>
+    </section>
+
+    <section class="wrap section corporate-strip">
+      <div class="corp-box small">civicaGroup</div>
+      <div class="corp-box">Civica Holdings</div>
+      <div class="corp-box">Civica Communications</div>
+      <div class="corp-box active">Caprica Media Group</div>
+    </section>
+  </main>
+  <div id="foot"></div>
+  <script src="/app.js"></script>
+  <script>renderHome()</script>
+</body>
+</html>
